@@ -1,0 +1,7 @@
+venv/
+.env 
+.flaskenv
+__pycache__/
+*.py[cod]
+
+.pytest_cache/
