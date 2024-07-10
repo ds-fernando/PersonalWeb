@@ -1,0 +1,55 @@
+h1 {
+    margin-bottom: 30px; /* Ajusta este valor según necesites */
+}
+
+
+h2, p {
+    line-height: 1.6;
+}
+
+h2 {
+    margin-top: 30px; }
+
+
+  
+
+    .view-all {
+        margin-left: 80px; /* Ajusta este valor según necesites */
+    }
+
+    body {
+        max-width: 40em;
+        margin: 0 auto;
+        padding: 5px;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        line-height: 30px;
+        background-color: #fff;
+        color: #000; }
+    
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    list-style: none;
+    text-decoration: none;
+}
+li, dd {
+    margin-bottom: 1em;
+}
+
+
+ul li a {
+    text-decoration: none; /* Quita el subrayado por defecto */
+    transition: text-decoration 0.3s ease; /* Agrega transición suave al subrayado */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
+
