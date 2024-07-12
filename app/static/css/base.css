@@ -10,14 +10,40 @@ h2, p {
 h2 {
     margin-top: 30px; }
 
+header#masthead {
+        font-size: 3em;
+    }
+header#masthead {
+    line-height: 1em; }
+header {
+        display: block;
+        unicode-bidi: isolate;
+    }
 
-  
 
-    .view-all {
+header#masthead, h1, h2, h3, dt, small, .small, dl#tweetlist dt, footer, label, #commentlist ol li cite, div.blogparent, input[type="submit"], figcaption {
+        font-family: valkyrie_c4;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+
+
+#masthead a {
+        color: #000; 
+        text-decoration: none;
+    }
+    
+#masthead a:hover {
+        text-decoration: underline; 
+    }
+
+.view-all {
         margin-left: 80px; /* Ajusta este valor según necesites */
     }
 
-    body {
+body {
         max-width: 40em;
         margin: 0 auto;
         padding: 5px;
