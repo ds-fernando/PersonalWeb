@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+import markdown2
+import os
 
 app = Flask(__name__)
 
@@ -16,10 +18,10 @@ def blog():
         if filename.endswith('.md'):
             with open(os.path.join(posts_dir, filename), 'r', encoding='utf-8') as file:
                 content = file.read()
-                html_content = markdown.markdown(content)
+                html_content = markdown2.markdown(content)  # Cambiado a markdown2.markdown
                 posts.append({
                     'title': filename[:-3].replace('_', ' ').title(),  # Usa el nombre del archivo como título
-                    'content': Markup(html_content)
+                    'content': (html_content)
                 })
     return render_template('blog.html', posts=posts)
 
