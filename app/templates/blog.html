@@ -4,11 +4,10 @@
 
 {% block content %}
 <h1>Blog</h1>
-{% for post in posts %}
-    <article>
-        <h2>{{ post.title }}</h2>
-        <div>{{ post.content }}</div>
-    </article>
-    <hr>
-{% endfor %}
+
+<ul>
+    {% for post in posts %}
+        <li><a href="{{ url_for('post', filename=post['filename']) }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
 {% endblock %}
